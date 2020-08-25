@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/layout_about_1"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:padding="2dp"
+        android:layout_margin="2dp"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textStyle="bold"
+            android:text="ABOUT"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:padding="5dp"
+            android:textColor="#e3e3e3"
+            android:fontFamily="sans-serif"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".30"
+        android:layout_marginTop="3dp"
+        android:background="@mipmap/and2"
+        android:layout_margin="2dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Entrance to the Hospital"
+            android:textAllCaps="true"
+            android:gravity="bottom"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="2dp"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".48"
+        android:layout_marginTop="3dp"
+        android:layout_margin="2dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="The hospital offers a tertiary level care in 42 specialities and has assembled the finest medical talent – Physicians, Surgeons, Nursing Professionals and Technicians. This is line with the continuing ethos of the hospital to combine the best medical care with warmth and tenderness which is essential to the healing process."
+            android:textAllCaps="false"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:fontFamily="serif"
+            android:textColor="#ffffff"
+            android:padding="2dp"
+            tools:ignore="HardcodedText,RtlHardcoded" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/layout_bg_menu"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/book"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/book"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="0dp"
+            android:layout_weight=".18"
+            android:layout_height="match_parent"
+            android:text="@string/about"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/city"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="#723a47"
+            android:background="@drawable/layout_menu_center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_weight=".22"
+            android:layout_height="match_parent"
+            android:text="@string/contact"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/more"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+</LinearLayout>

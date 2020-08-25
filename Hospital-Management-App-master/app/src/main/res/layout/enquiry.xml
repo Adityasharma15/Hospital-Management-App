@@ -1,0 +1,224 @@
+<LinearLayout
+
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/layout_about_1"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:layout_marginTop="5dp"
+        android:layout_gravity="center"
+        android:gravity="bottom"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:fontFamily="serif"
+            android:gravity="bottom"
+            android:padding="9dp"
+            android:text="Enquiry"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        tools:ignore="UselessLeaf">
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".86"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:text="@string/phone"
+            android:textColor="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="0dp"
+            android:layout_weight="0.14"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_foreground"
+            android:contentDescription="callButton"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight=".86"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="start"
+            android:textAllCaps="false"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:text="@string/email_1"
+            android:textColor="#ffffff"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            tools:ignore="NestedWeights" />
+
+        <ImageView
+            android:id="@+id/email"
+            android:layout_width="0dp"
+            android:layout_weight="0.14"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_launcher_foreground"
+            android:contentDescription="mailId"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".08"
+        tools:ignore="UselessLeaf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".1"
+        >
+        <TextView
+            android:id="@+id/web"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="22sp"
+            android:text="@string/Open_web"
+            android:textColor="#0000EE"
+            android:paddingTop="5dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="0dp"
+            tools:ignore="NestedWeights"
+           />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".3"
+        tools:ignore="UselessLeaf">
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/layout_bg_menu"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+        <TextView
+            android:id="@+id/book"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/book"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/about"
+            android:layout_width="0dp"
+            android:layout_weight=".18"
+            android:layout_height="match_parent"
+            android:text="@string/about"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/city"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="#723a47"
+            android:background="@drawable/layout_menu_center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_weight=".22"
+            android:layout_height="match_parent"
+            android:text="@string/contact"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/more"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/layout_about_1"
+    android:orientation="vertical"
+    android:weightSum="1"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".10"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="25dp"
+        android:background="@drawable/layout_bg">
+
+        <TextView
+            android:id="@+id/appoint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="Book An Appointment"
+            android:textAllCaps="false"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textColor="#FFF"
+            tools:ignore="HardcodedText" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".06"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="130dp"
+        android:layout_marginLeft="130dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Our Facilities"
+        android:textColor="#ff0"
+        android:textStyle="bold"
+        android:textDirection="firstStrong"
+        tools:ignore="HardcodedText" />
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0dp"
+        android:layout_weight=".72"
+        android:weightSum=".72"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:id="@+id/parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="invisible"
+            android:alpha=".3"
+            android:layout_weight=".72"
+            android:weightSum=".72"
+            android:orientation="vertical"
+            tools:ignore="InefficientWeight,NestedWeights,UselessParent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight=".40"
+                tools:ignore="NestedWeights,UselessLeaf" />
+
+            <LinearLayout
+            android:id="@+id/lv_Log"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:gravity="center"
+                android:layout_margin="2dp"
+            >
+
+            <TextView
+                android:id="@+id/CityLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:background="@drawable/layout_bg_menu"
+                android:textColor="#526360"
+                android:text="@string/login"
+                />
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+
+            android:id="@+id/lv_Contact"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_margin="2dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <TextView
+                android:id="@+id/CityContact"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="20sp"
+                android:background="@drawable/layout_bg_menu"
+                android:textColor="#526360"
+                android:text="@string/contact"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/lv_emergency"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="2dp"
+            >
+
+            <TextView
+                android:id="@+id/CityEmergency"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="20sp"
+                android:padding="5dp"
+                android:background="@drawable/layout_bg_menu"
+                android:textColor="#526360"
+                android:text="@string/emergency"
+                />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/menu"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight=".12"
+        android:layout_marginTop="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_marginLeft="1dp"
+        android:background="@drawable/layout_bg_menu"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+
+    <TextView
+        android:id="@+id/book"
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:layout_height="match_parent"
+        android:text="@string/book"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        tools:ignore="NestedWeights" />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="0dp"
+        android:layout_weight=".20"
+        android:layout_height="match_parent"
+        android:text="@string/about"
+        android:textAllCaps="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+        <TextView
+            android:id="@+id/city"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/city"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:backgroundTint="#723a47"
+            android:background="@drawable/layout_menu_center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights"
+            android:padding="1dp"/>
+
+
+        <TextView
+            android:id="@+id/contact"
+            android:layout_width="0dp"
+            android:layout_weight=".22"
+            android:layout_height="match_parent"
+            android:text="@string/contact"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights"
+            android:padding=".5dp"/>
+
+        <TextView
+            android:id="@+id/more"
+            android:layout_width="0dp"
+            android:layout_weight=".20"
+            android:layout_height="match_parent"
+            android:text="@string/more"
+            android:textAllCaps="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            tools:ignore="NestedWeights" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
+
+

@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<ListView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:id="@+id/listView"
+    xmlns:android="http://schemas.android.com/apk/res/android"/>
